@@ -1,6 +1,8 @@
 /**
  * Let's try JavaScript, again!
  * Multi-line comment.
+ * @git  https://github.com/TECHCareers-by-Manpower/wb-lets-try-javascript-again.git
+ * @link https://github.com/TECHCareers-by-Manpower/wb-lets-try-javascript-again
  */
 
 // Single line, comment!
