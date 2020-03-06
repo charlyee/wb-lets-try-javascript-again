@@ -108,4 +108,18 @@ myHeading.addEventListener( 'mouseover'/* Here we say which event we are targeti
     this.className = 'salmon-text'; /* In an event, the "this" keyword represents our element (myHeading). */
 } );
 
+// When you stop hovering...
+myHeading.addEventListener( 'mouseleave', function ( event ) {
+    this.className = 'indigo-text'; 
+} );
 
+// When you stop hovering...
+myHeading.addEventListener( 'click', function ( event ) {
+    // The class we want to add.
+    var bigClass = 'big-text'; // Check if it already has it!
+    if ( !this.className.includes( bigClass ) ) // Good to do checks like this so we don't have 500 of the same class on here if the user keeps clicking!
+    { // Exclamation means NOT. So it fires on the OPPOSITE.
+        this.className += ' big-text'; // Concatenating a new class!
+        // Remember, you must have a space between classes when assigning multiple.
+    }
+} );
