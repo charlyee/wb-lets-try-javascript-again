@@ -1,8 +1,11 @@
 /**
  * Let's try JavaScript, again!
- * Multi-line comment.
- * @git  https://github.com/TECHCareers-by-Manpower/wb-lets-try-javascript-again.git
- * @link https://github.com/TECHCareers-by-Manpower/wb-lets-try-javascript-again
+ * Multi-line comment uses slashes and asterisks!
+ * @author  TECHCareers
+ * @date    2020.03.06
+ * @git     https://github.com/TECHCareers-by-Manpower/wb-lets-try-javascript-again.git
+ * @link    https://github.com/TECHCareers-by-Manpower/wb-lets-try-javascript-again
+ * @summary Testing out some wicked JavaScript!
  */
 
 // Single line, comment!
