@@ -99,3 +99,13 @@ myHeading.title = 'This is a heading.'; // Tooltip attribute.
 // myHeading.style.color = 'darkgray'; // PLEASE avoid using inline styles... this is the CSS file's job!!!
 myHeading.className = 'gray-text'; // Use classes instead!
 
+/**
+ * Events!
+ */
+
+// We can add event-listeners to a targeted element.
+myHeading.addEventListener( 'mouseover'/* Here we say which event we are targeting. */, function ( event/* We can capture info about the event */ ) {
+    this.className = 'salmon-text'; /* In an event, the "this" keyword represents our element (myHeading). */
+} );
+
+
