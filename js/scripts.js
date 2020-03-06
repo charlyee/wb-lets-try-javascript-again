@@ -79,6 +79,13 @@ for ( var i = 0; i < myArrayOfDataTypes.length; i++ )
     myDataList.appendChild( dataListData );
 }
 
+var myHeadingText = 'Our Data-Type Test:';
+// This is adding HTML to the end of our body.
+document.body.innerHTML += `<!-- Back ticks are used in JS for multi-line strings. -->
+    <h2>
+        `+myHeadingText/*Concatenating strings!*/+`
+    </h2>
+`;
 // Add ALL of that to the body! Yay! We should be able to see it now!
 document.body.appendChild( myDataList );
 
