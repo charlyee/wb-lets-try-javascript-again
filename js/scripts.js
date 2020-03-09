@@ -290,4 +290,7 @@ Person.prototype.introduction = function () { // This is a method in our "Person
     `;
 }
 
-
+// Extra prototype practice: a property.
+Person.prototype.nickname = '';
+jerry.nickname = 'The Big Jare';
+sally.nickname = 'Sallers';
