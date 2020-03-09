@@ -251,4 +251,12 @@ function Person ( name, age, hobbies ) {
 var jerry = new Person( 'Jerry', 61, ['snowboarding', 'action movies', 'programming'] );
 
 // And another! Isn't this easier than typing out a whole object /every/ time!?
-var sally = new Person( 'Sally', 36, ['daredevil biking', 'skydiving', 'teaching'] );
+var sally = new Person(
+    'Sally', // name:
+    36, // age:
+    [ // hobbies:
+        'daredevil biking',
+        'skydiving',
+        'teaching'
+    ]
+);
