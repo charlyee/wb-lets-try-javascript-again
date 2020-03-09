@@ -165,6 +165,7 @@ console.log( -137 == true ); // False
 console.log( 'test' == 'test' ); // True
 console.log( 36 == '36' ); // True
 console.log( 0 == false ); // True
+console.log( `test string` == "test string" ); // True
 
 // Check if identical (value comparison including type.)
 console.log( 1 === true ); // False
@@ -173,5 +174,20 @@ console.log( -137 === true ); // False
 console.log( 'test' === 'test' ); // True
 console.log( 36 === '36' ); // False
 console.log( 0 === false ); // False
+console.log( `test string` === "test string" ); // True
 
+/**
+ * Hamburger Menu.
+ */
 
+// Let's grab our menu...
+var myNav = document.querySelector( 'nav' );
+
+// And our menu button...
+var myNavButton = document.querySelector( '.menu-button' );
+
+// Let's listen for a click on this.
+myNavButton.addEventListener( 'click', function ( event ) {
+    // When clicked, add/remove the "nav-open" class (in HTML.)
+    myNav.classList.toggle( 'nav-open' );
+} );
