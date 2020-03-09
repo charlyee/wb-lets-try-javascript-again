@@ -47,7 +47,7 @@ nav ul {
     list-style: none;
     overflow: auto;
     width: 100%;
-    height: 100vh;
+    height: 100vh; /* Change to auto to match your content height. */
     max-height: 0;
     transition: 0.3s ease all;
 }
