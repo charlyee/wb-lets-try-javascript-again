@@ -245,6 +245,15 @@ function Person ( name, age, hobbies ) {
     this.name    = name;
     this.age     = age;
     this.hobbies = hobbies;
+    this.sayGoodbye = function () { // Setting up a method in a constructor function.
+        document.body.innerHTML += `
+            <p>
+                This is
+                <strong>` + this.name + `</strong>,
+                saying <em>goodbye</em>!
+            </p>
+        `;
+    };
 }
 
 // Let's make a new instance of "Person!" This is called an object.
@@ -264,7 +273,7 @@ var sally = new Person(
 // We can add to the blueprint using "prototype", even after its initial declaration.
 Person.prototype.introduction = function () { // This is a method in our "Person" blueprint/prototype/class!
     var hobbiesString = '<ul>'; // Set up for list HTML.
-    this.hobbies.forEach( function ( value, index ) {
+    this.hobbies.forEach( function ( value, index ) { // Looping through an array.
         hobbiesString += '<li>' + value + '</li>'; // Loop through our hobbies and make a list item for each.
     } );
     hobbiesString += '</ul>'; // We opened a UL in this string, so lets close it! (Concatenation!)
@@ -280,3 +289,5 @@ Person.prototype.introduction = function () { // This is a method in our "Person
         </dl>
     `;
 }
+
+
