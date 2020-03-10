@@ -68,5 +68,18 @@ function divideNums ( x, y ) { // Division.
 }
 
 function myMath ( operation, x, y ) {
-
+    switch ( operation ) {
+        case "add":
+            return addNums( x, y ); // "Return" kills the function, so breaks are optional here.
+        case "subtract":
+            return subtractNums( x, y );
+        case "multiply":
+            return multiplyNums( x, y );
+        case "divide":
+            return divideNums( x, y );
+        default:
+            return 'Invalid operation.';
+    }
 }
+
+// console.log( myMath( 'add', 64, 6 ) );
