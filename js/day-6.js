@@ -83,3 +83,31 @@ function myMath ( operation ) {
 }
 
 // console.log( myMath( 'add', 64, 6 ) );
+// console.log( myMath('add')(64,6) );
+
+// Testing function.
+var result = myMath( 'divide' )( 9, 3 ); // result = 3
+console.log( result );
+var newResult = myMath( 'multiply' )( 2, result ); // newResult = 6
+console.log( newResult );
+
+/**
+ * Now let's try with... anonymous functions.
+ */
+
+function newTestFunction ( myString ) {
+    myString = 'Entered string is: '+myString;
+    return function ( additionalString ) {
+        if ( additionalString != undefined ) {
+            myString += ', '+additionalString;
+        }
+        return function ( yetAnotherString ) {
+            if ( yetAnotherString != undefined ) {
+                myString += ', ' + yetAnotherString + '!!!';
+            }
+            return myString;
+        }
+    }
+}
+
+console.log ( newTestFunction( 'A B C D E F G' )( 'H I J K L M N O P' )( 'Q R S T U V W X Y Z' ) );
