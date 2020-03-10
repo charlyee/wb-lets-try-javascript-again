@@ -67,16 +67,16 @@ function divideNums ( x, y ) { // Division.
     return ( x / y ); // Quotient.
 }
 
-function myMath ( operation, x, y ) {
+function myMath ( operation ) {
     switch ( operation ) {
         case "add":
-            return addNums( x, y ); // "Return" kills the function, so breaks are optional here.
+            return addNums; // "Return" kills the function, so breaks are optional here.
         case "subtract":
-            return subtractNums( x, y );
+            return subtractNums;
         case "multiply":
-            return multiplyNums( x, y );
+            return multiplyNums;
         case "divide":
-            return divideNums( x, y );
+            return divideNums;
         default:
             return 'Invalid operation.';
     }
